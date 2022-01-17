@@ -11,10 +11,11 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
-
+// resultado retorna a media //
+// 0 linha 20 quer dizer '' (vazio) //
 const average = (array) => {
 let soma = 0;
-let resultado = 0;
+let resultado = 0; 
 
 if (array.length === 0) {
   return undefined;
@@ -28,5 +29,5 @@ soma += array[index];
 resultado = Math.round(soma / array.length);
 return resultado;
 };
-  
+ 
 module.exports = average;
