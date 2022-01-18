@@ -27,7 +27,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
   it('Verifica se ao receber um raio, a função `circle` retorna um objeto contedos os valores esperados', () => {
     expect(circle('oi')).toBeUndefined();
     expect(circle).toBe('obeject');
-
+    
     
     // Teste se circle retorna undefined, caso o parâmetro passado não seja um número.
     // Teste se circle retorna um objeto.
