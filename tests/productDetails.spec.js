@@ -35,6 +35,8 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof productDetails([0])).toBe('object'); // faz parte com o teste abaixo //
     expect(typeof productDetails([1])).toBe('object'); //faz parte com o teste acima //
     expect(!productDetails()).not.toBe(productDetails());
+    expect(productDetails('Alcool gel','mascara')[0].details.productId.slice(-3)).toBe('123');
+    expect(productDetails('Alcool gel','mascara')[1].details.productId.slice(-3)).toBe('123'); // slice pega os ultimos ou primmeiros numeros//
     // Teste se productDetails é uma função. 
     // Teste se o retorno da função é um array.
     // Teste se o array retornado pela função contém dois itens dentro.
